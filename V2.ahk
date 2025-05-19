@@ -1,4 +1,4 @@
-﻿#NoEnv
+#NoEnv
 #SingleInstance Force
 SendMode Input
 SetWorkingDir %A_ScriptDir%
@@ -6,7 +6,6 @@ SetWorkingDir %A_ScriptDir%
 ; Global variables for keys and running state
 laughKey := ""
 tiltKey := ""
-flexWalkKey := ""
 saluteKey := ""
 running := false
 
@@ -22,11 +21,6 @@ Gui, Add, Button, x20 y70 w190 h30 gAssignLaugh, Assign Laugh (R6)
 Gui, Add, Text, x240 y20 w190 Center, Tilt (R15) Keybind:
 Gui, Add, Text, vTiltKeyText x240 y40 w190 Center, None
 Gui, Add, Button, x240 y70 w190 h30 gAssignTilt, Assign Tilt (R15)
-
-; Row 2, Column 1: Flex Walk (R6)
-Gui, Add, Text, x20 y120 w190 Center, Flex Walk (R6) Keybind:
-Gui, Add, Text, vFlexWalkKeyText x20 y140 w190 Center, None
-Gui, Add, Button, x20 y170 w190 h30 gAssignFlexWalk, Assign Flex Walk (R6)
 
 ; Row 2, Column 2: Salute (R15)
 Gui, Add, Text, x240 y120 w190 Center, Salute (R15) Keybind:
@@ -65,18 +59,6 @@ AssignTilt:
     }
 return
 
-AssignFlexWalk:
-    InputBox, key, Assign Flex Walk (R6) Key, Press a key to assign for Flex Walk (R6):
-    if ErrorLevel = 0
-    {
-        flexWalkKey := key
-        GuiControl,, FlexWalkKeyText, %flexWalkKey%
-        if (running)
-            Hotkey, %flexWalkKey%, RunFlexWalk, On
-        MsgBox, 64, Assigned, Flex Walk (R6) Key assigned to: %flexWalkKey%
-    }
-return
-
 AssignSalute:
     InputBox, key, Assign Salute (R15) Key, Press a key to assign for Salute (R15):
     if ErrorLevel = 0
@@ -101,8 +83,6 @@ if (!running)
         Hotkey, %laughKey%, RunLaugh, On
     if (tiltKey != "")
         Hotkey, %tiltKey%, RunTilt, On
-    if (flexWalkKey != "")
-        Hotkey, %flexWalkKey%, RunFlexWalk, On
     if (saluteKey != "")
         Hotkey, %saluteKey%, RunSalute, On
 }
@@ -120,8 +100,6 @@ if (running)
         Hotkey, %laughKey%, Off
     if (tiltKey != "")
         Hotkey, %tiltKey%, Off
-    if (flexWalkKey != "")
-        Hotkey, %flexWalkKey%, Off
     if (saluteKey != "")
         Hotkey, %saluteKey%, Off
 }
@@ -141,7 +119,7 @@ RunLaugh:
     Send, {Shift down}{s down}
     Sleep, 100
     Send, {Space}
-    Sleep, 900  ; 100 + 900 = 1 second total holding S
+    Sleep, 900
     Send, {Shift up}{s up}
 return
 
@@ -170,19 +148,6 @@ return
 
 TiltStep4:
     Send, {a up}{Shift up}
-return
-
-; === Flex Walk Macro Sequence (fixed) ===
-RunFlexWalk:
-    ToolTip, Flex Walk Triggered!
-    SetTimer, RemoveToolTip, -1000
-
-    Send, /
-    Sleep, 100
-    Send, /e dance2
-    Send, {Enter}
-    Sleep, 780
-    Send, {Shift down}
 return
 
 ; === Salute Macro Sequence (unchanged) ===

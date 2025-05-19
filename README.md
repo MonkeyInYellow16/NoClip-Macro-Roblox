@@ -38,7 +38,7 @@ You can find both emotes in the [Roblox Avatar Shop](https://www.roblox.com/cata
 
 ---
 
-Each macro can be assigned to its own **hotkey via the included GUI**.
+If you are wondering how to perform these NoClips, I suggest watching this video: https://youtu.be/YyAWqDjz1J8?si=0nuTWnvkTfBXNxvC 
 
 ---
 

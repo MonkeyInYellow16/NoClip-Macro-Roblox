@@ -1,62 +1,59 @@
-Roblox NoClip Macro (R6 & R15)
+# Roblox NoClip Macro (R6 & R15)
+
 This is a custom AutoHotkey-based macro system I created for NoClipping in Roblox. It includes 4 macros total:
 
-2 R6 NoClips
+- ✅ 2 R6 NoClips  
+- ✅ 2 R15 NoClips  
 
-2 R15 NoClips
+⚠️ **Make sure to use the correct character model macro with the correlating game.**
 
-⚠️ Make sure to use the correct character model macro with the correlating game
+---
 
-🧠 About
-This macro works best with tall avatars, which you can create using only free Roblox avatar items—the ones I tested with were all free. For R15 NoClip macros to function properly, you'll need two specific emotes:
+## 🧠 About
 
-"Salute" Emote → Assign to Slot 1 on your Emote Wheel
+This macro works best with **tall avatars**, which you can create using only **free Roblox avatar items** — the ones I tested with were all free.
 
-"Tilt" Emote → Assign to Slot 2 on your Emote Wheel
+For **R15 NoClip macros** to function properly, you’ll need two specific **free** emotes:
 
-Both emotes are free and can be found in the Roblox avatar shop.
+- 🎖️ **“Salute”** → Assign to **Slot 1** on your Emote Wheel  
+- 🎯 **“Tilt”** → Assign to **Slot 2** on your Emote Wheel
 
-🎮 How to Use
-Equip a tall avatar (taller avatars work best for consistency).
+You can find both emotes in the [Roblox Avatar Shop](https://www.roblox.com/catalog).
 
-Assign the required emotes:
+---
 
-"Salute" → Emote Wheel Slot 1
+## 🎮 How to Use
 
-"Tilt" → Emote Wheel Slot 2
+1. Equip a **tall avatar** (for best results).
+2. Assign the required emotes:
+   - **Salute** → Emote Wheel **Slot 1**
+   - **Tilt** → Emote Wheel **Slot 2**
+3. Load into a game with walls you want to NoClip through.
+4. Enable **Shift Lock** in your Roblox settings.
+5. Get your character **close up to a wall**.
+6. Run the macro.
+7. Watch which direction Shift Lock pushes you.
+8. Adjust your character’s orientation as needed.
+9. Retry until you pass through.
 
-Load into a game with walls you want to NoClip through.
+---
 
-Enable Shift Lock.
+Each macro can be assigned to its own **hotkey via the included GUI**.
 
-Face your character close up to a wall.
+---
 
-Run the macro and observe which direction shift lock pushes you.
+## 🛠️ Requirements
 
-Adjust your character’s orientation as needed and retry until you pass through.
+- [AutoHotkey 2.0+](https://www.autohotkey.com/) installed
+- Basic understanding of how to run `.ahk` scripts
 
-📦 Included Macros
-R6_NoClip_1
+---
 
-R6_NoClip_2
+## ❗ Tips
 
-R15_NoClip_Tilt
+- ✅ Make sure **Shift Lock** is turned on in your Roblox settings
+- 🔄 If the macro doesn’t work right away, try **adjusting your angle or position**
+- 🧱 Not all games or walls behave the same — **experiment a little** to get it just right
 
-R15_NoClip_Salute
-
-Each macro can be assigned to its own hotkey via the macro GUI included in the system.
-
-🛠️ Requirements
-Windows (for AutoHotkey support)
-
-AutoHotkey installed (https://www.autohotkey.com/)
-
-Basic understanding of how to run AHK scripts
-
-❗Tips
-Make sure Shift Lock is turned on in your Roblox settings.
-
-Try different orientations if the macro doesn’t work right away.
-
-Not all games or walls behave the same—experiment and adjust positioning as needed.
+---
 

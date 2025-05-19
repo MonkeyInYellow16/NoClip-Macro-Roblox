@@ -3,7 +3,7 @@
 Note: If you already have AutoHotkey isntalled, just install V.2 and run in, that is the Macro file
 This is a custom AutoHotkey-based macro system I created for NoClipping in Roblox. It includes 4 macros total:
 
-- ✅ 2 R6 NoClips  
+- ✅ 1 R6 NoClips  
 - ✅ 2 R15 NoClips  
 
 ⚠️ **Make sure to use the correct character model macro with the correlating game.**
